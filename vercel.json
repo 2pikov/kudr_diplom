@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "public/index.php",
-            "use": "@vercel/php"
+            "use": "vercel-php@0.6.0"
         }
     ],
     "routes": [
@@ -11,5 +11,9 @@
             "src": "/(.*)",
             "dest": "public/index.php"
         }
-    ]
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "false"
+    }
 } 

@@ -1,0 +1,14 @@
+{
+    "php": "8.2",
+    "extensions": [
+        "bcmath",
+        "ctype",
+        "fileinfo",
+        "json",
+        "mbstring",
+        "openssl",
+        "pdo",
+        "tokenizer",
+        "xml"
+    ]
+} 
