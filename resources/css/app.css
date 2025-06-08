@@ -1,0 +1,224 @@
+@import url(./aboutSection.css);
+@import url(./catalog.css);
+@import url(./profile.css);
+@import url(./banner.css);
+@import url(./card.css);
+@import url(./cart.css);
+@import url(./otzovi.css);
+@import url(./slider.css);
+@import url(./footer.css);
+@import url(./obloz.css);
+@import url(./aboutcomp.css);
+@import url(./why.css);
+@import url(./call.css);
+@import url(./register.css);
+@import url(./where.css);
+@import url(./admin_prod.css);
+@import url(./orders.css);
+@import url(./cat_admin.css);
+@import url(./user.css);
+@import url(./pag.css);
+@import url(./quick-order.css);
+@import url(./prod_cart.css);
+@import url(./favorites.css);
+@import url(./comparisons.css);
+@import url(./profile-edit.css);
+@import url(./navigation.css);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Play:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "truneo";
+    src: url("../media/fonts/trueno-font/TruenoSemibold-Z9yl.otf")
+        format("opentype");
+}
+
+/* Основные переменные */
+:root {
+    --color-primary: #D20D0D;
+    --color-dark: #1F1E1E;
+    --color-white: #FFFFFF;
+    --font-main: 'Unbounded', sans-serif;
+    
+    /* Шрифты */
+    --font-heading: 'Unbounded', sans-serif;
+    --font-body: 'Sansation', sans-serif;
+    
+    /* Размеры шрифтов */
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-base: 1rem;     /* 16px */
+    --font-size-lg: 1.125rem;   /* 18px */
+    --font-size-xl: 1.25rem;    /* 20px */
+    --font-size-2xl: 1.5rem;    /* 24px */
+    --font-size-3xl: 1.875rem;  /* 30px */
+    --font-size-4xl: 2.25rem;   /* 36px */
+    
+    /* Замены для старых цветов */
+    --gray-100: var(--color-white);
+    --gray-200: var(--color-white);
+    --gray-300: var(--color-dark);
+    --gray-400: var(--color-dark);
+    --gray-500: var(--color-dark);
+    --gray-600: var(--color-dark);
+    --gray-700: var(--color-dark);
+    --gray-800: var(--color-dark);
+    --gray-900: var(--color-dark);
+    
+    /* Дополнительные цвета */
+    --red: var(--color-primary);
+    --danger: var(--color-primary);
+    --success: var(--color-primary);
+    --primary: var(--color-primary);
+}
+
+/* Общие стили */
+* {
+    /* overflow-x: hidden; */ /* Убираем скрытие горизонтального скролла */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-dark);
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-main);
+    color: var(--color-dark);
+}
+
+/* Кнопки */
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #b30000;
+}
+
+/* Ссылки */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b30000;
+}
+
+/* Отступы для секций */
+.section {
+    padding: 60px 0;
+}
+
+@media (max-width: 992px) {
+    .section {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 30px 0;
+    }
+}
+
+/* Контейнеры */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Сетки */
+.grid {
+    display: grid;
+    gap: 30px;
+}
+
+@media (max-width: 992px) {
+    .grid {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .grid {
+        gap: 15px;
+    }
+}
+
+/* Формы */
+.form-control {
+    font-family: var(--font-main);
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+/* Уведомления */
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

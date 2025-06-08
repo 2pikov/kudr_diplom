@@ -1,0 +1,199 @@
+/* Общий контейнер для формы регистрации */
+.auth-container {
+    background: rgba(255,255,255,0.95);
+    max-width: 900px;
+    margin: 60px auto 60px auto;
+    border-radius: 28px;
+    box-shadow: 0 8px 32px rgba(210,13,13,0.13);
+    padding: 54px 60px 54px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    animation: fadeInUp 0.8s cubic-bezier(.23,1.01,.32,1) both;
+    border: 1.5px solid #f3d6d6;
+    backdrop-filter: blur(2px);
+}
+
+/* Заголовок формы */
+.auth-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #D20D0D;
+    font-weight: bold;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    overflow: visible;
+    word-break: break-word;
+    background: linear-gradient(90deg, #D20D0D 60%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 16px rgba(210,13,13,0.10);
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.auth-title::before {
+    content: "📝";
+    font-size: 1.5em;
+    position: absolute;
+    left: 50%;
+    top: -1.2em;
+    transform: translateX(-50%);
+    opacity: 0.85;
+}
+
+/* Группа элементов формы (label + input) */
+.auth-form-group {
+    margin-bottom: 20px; /* Расстояние между группами */
+    position: relative; /* для абсолютного позиционирования */
+}
+
+/* Label (текст) */
+.auth-label {
+    display: block; /* Отображение label как блочный элемент */
+    color: #000; /* Черный цвет текста */
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* input (текстовые поля)*/
+.auth-input {
+    display: block;
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1.08rem;
+    background: #fff;
+    color: #181818;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(30,30,30,0.04);
+}
+
+.auth-input:focus {
+    border: 2px solid #d20d0d;
+    box-shadow: 0 0 0 4px rgba(210,13,13,0.08);
+    background: #fff9f9;
+}
+
+/* Checkbox*/
+.auth-checkbox{
+     cursor: pointer;
+     accent-color: #f00; /* красный цвет чекбокса */
+}
+
+/* Сообщение об ошибке */
+.auth-error {
+    color: #d20d0d;
+    font-size: 0.98rem;
+    margin-top: 2px;
+    opacity: 0;
+    animation: fadeInError 0.5s forwards;
+}
+
+@keyframes fadeInError {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Кнопка Регистрация */
+.auth-button {
+    background: linear-gradient(90deg, #D20D0D 60%, #b30000 100%);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    font-size: 1.18rem;
+    font-weight: bold;
+    padding: 18px 0;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 4px 24px rgba(210,13,13,0.13);
+    transition: background 0.3s, box-shadow 0.3s, border 0.3s, filter 0.3s;
+    border: 2px solid transparent;
+    margin-top: 8px;
+}
+
+.auth-button:hover{
+    background: linear-gradient(90deg, #b30000 60%, #D20D0D 100%);
+    box-shadow: 0 8px 32px rgba(210,13,13,0.18);
+    border: 2px solid #fff;
+    filter: brightness(1.08) drop-shadow(0 0 8px #d20d0d44);
+}
+
+/* ссылка на вход*/
+.auth-link{
+     text-decoration: none; /* убираем подчеркивание*/
+    color: #000; /* Черный цвет текста */
+   transition: color 0.2s;
+}
+.auth-link:hover {
+    color: #f00;/* красный цвет текста при наведении*/
+}
+/* контейнер для кнопки и ссылки*/
+ .auth-action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-container {
+    font-family: var(--font-body);
+}
+
+.register-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.form-label {
+    font-family: var(--font-body);
+}
+
+.form-input {
+    font-family: var(--font-body);
+}
+
+.register-button {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.login-link {
+    font-family: var(--font-body);
+}
+
+body {
+    background: #fff;
+}
+
+@media (max-width: 600px) {
+    .auth-container {
+        padding: 18px 4vw 18px 4vw;
+        border-radius: 12px;
+    }
+    .auth-title {
+        font-size: 1.3rem;
+        padding-bottom: 4px;
+    }
+    .auth-button {
+        font-size: 1rem;
+        padding: 12px 0;
+        width: 100%;
+    }
+    .auth-title::before {
+        font-size: 1.1em;
+        top: -1.1em;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,45 @@
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border-radius: 8px;
+    padding: 16px 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transform: translateX(120%);
+    transition: transform 0.3s ease;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification i {
+    color: #4CAF50;
+    font-size: 24px;
+}
+
+.notification-text {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Стили для кнопок избранного */
+.btn-favorite, .btn-favorite2, .btn-favorite3, .btn-favorite-catalog {
+    transition: all 0.3s ease;
+}
+
+.btn-favorite.active, .btn-favorite2.active, .btn-favorite3.active, .btn-favorite-catalog.active {
+    background: #d20d0d !important;
+    color: white !important;
+    border-color: #d20d0d !important;
+}
+
+.btn-favorite.active i, .btn-favorite2.active i, .btn-favorite3.active i, .btn-favorite-catalog.active i {
+    color: white !important;
+} 

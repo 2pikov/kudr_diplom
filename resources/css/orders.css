@@ -1,0 +1,158 @@
+.order__filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.order__filters a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #636363;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.order__filters a:hover {
+    background-color: #dd0707;
+    color: #ffffff;
+}
+
+.order__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: scroll;
+}
+
+.order__table th,
+.order__table td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: left;
+    width: 1500px;
+}
+
+.order__table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #212529;
+}
+
+.order__table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.order__raw:hover {
+    background-color: #e21638;
+    transition: background-color 0.3s ease;
+}
+
+.order__products {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.order__product {
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+    font-size: 0.9em;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.order__table form {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .order__filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .order__table th,
+    .order__table td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+    .order__table {
+        font-size: 0.8em;
+    }
+}
+
+.orders-container {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.orders-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.order-item {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.order-number {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.order-date {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.order-status {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.order-total {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.order-details {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.order-button {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}

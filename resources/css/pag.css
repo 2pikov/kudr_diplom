@@ -1,0 +1,9 @@
+.pagination {
+    text-align: center;
+}
+
+.pagination ul { /* стили для ul */
+    justify-content: center; /* выравнивание элементов по центру */
+    display: flex; 
+}
+

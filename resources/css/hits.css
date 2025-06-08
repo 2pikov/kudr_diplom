@@ -1,0 +1,358 @@
+.hits {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.zag_hits {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.hits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hit-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 8px;
+}
+
+.hit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hit-label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #cc0000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.hit-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    background: #f8f8f8;
+}
+
+.hit-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.hit-info {
+    margin-bottom: 20px;
+}
+
+.hit-property {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.hit-property span:first-child {
+    color: #999;
+}
+
+.hit-price {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hit-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-add-cart {
+    flex: 1;
+    padding: 12px;
+    background: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-add-cart:hover {
+    background: #b30000;
+}
+
+.btn-favorite {
+    padding: 12px;
+    background: #f8f8f8;
+    border: none;
+    border-radius: 5px;
+    color: #666;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-favorite:hover {
+    background: #ffebee;
+    color: #cc0000;
+}
+
+.catalog-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-to-catalog {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #cc0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.btn-to-catalog:hover {
+    background: #b30000;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .hits-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .hit-image {
+        height: 180px;
+    }
+    
+    .hit-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hits {
+        padding: 40px 0;
+    }
+    
+    .zag_hits {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .hits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .hit-card {
+        padding: 15px;
+    }
+    
+    .hit-image {
+        height: 160px;
+        margin-bottom: 15px;
+    }
+    
+    .hit-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .hit-info {
+        margin-bottom: 15px;
+    }
+    
+    .hit-property {
+        font-size: 13px;
+    }
+    
+    .hit-price {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .btn-add-cart {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .btn-favorite {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hits {
+        padding: 30px 0;
+    }
+    
+    .zag_hits {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    
+    .hits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 0 10px;
+    }
+    
+    .hit-card {
+        padding: 12px;
+    }
+    
+    .hit-label {
+        top: 10px;
+        right: 10px;
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    
+    .hit-image {
+        height: 140px;
+        margin-bottom: 12px;
+    }
+    
+    .hit-title {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .hit-info {
+        margin-bottom: 12px;
+    }
+    
+    .hit-property {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+    
+    .hit-price {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    .btn-add-cart {
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    .btn-favorite {
+        padding: 8px;
+    }
+    
+    .btn-to-catalog {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hits {
+        padding: 20px 0;
+    }
+    
+    .zag_hits {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .hits-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 15px;
+    }
+    
+    .hit-card {
+        padding: 15px;
+        max-width: 400px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .hit-image {
+        height: 200px;
+        margin-bottom: 15px;
+    }
+    
+    .hit-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .hit-info {
+        margin-bottom: 15px;
+    }
+    
+    .hit-property {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .hit-price {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .hit-actions {
+        gap: 12px;
+    }
+    
+    .btn-add-cart {
+        padding: 12px;
+        font-size: 14px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn-favorite {
+        padding: 12px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn-to-catalog {
+        padding: 12px 25px;
+        font-size: 16px;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+} 

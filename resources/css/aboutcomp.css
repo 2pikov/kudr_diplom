@@ -1,0 +1,145 @@
+/* --- Новый современный блок 'О компании' --- */
+.company {
+  background: #fff;
+  padding: 70px 0 20px 0;
+}
+.zag_comp {
+  font-size: 2.4rem;
+  color: #d20d0d;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 38px;
+  letter-spacing: 1px;
+}
+.company-block {
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(30,30,30,0.10);
+  padding: 48px 32px 48px 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+.company-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.company-image img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 28px;
+  box-shadow: 0 8px 32px rgba(210,13,13,0.10);
+  background: #fff;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+.company-description {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  color: #181818;
+  font-size: 1.18rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.company-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+  overflow: visible;
+}
+.stat {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(210,13,13,0.07);
+  padding: 22px 32px 16px 32px;
+  text-align: center;
+  min-width: 120px;
+  margin: 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stat:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(210,13,13,0.13);
+  border: 2px solid #d20d0d;
+}
+.number {
+  font-size: 2rem;
+  color: #d20d0d;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+.description {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 600;
+}
+@media (max-width: 900px) {
+  .company-block {
+    padding: 24px 4vw 24px 4vw;
+    gap: 24px;
+  }
+  .company-image img {
+    max-width: 98vw;
+    border-radius: 18px;
+  }
+  .company-description {
+    font-size: 1.05rem;
+  }
+  .company-stats {
+    gap: 14px;
+  }
+  .stat {
+    padding: 14px 10vw 10px 10vw;
+    min-width: 90px;
+  }
+  .number {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .zag_comp {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+  }
+  .company-block {
+    padding: 8px 2vw 8px 2vw;
+    gap: 12px;
+  }
+  .company-image img {
+    max-width: 99vw;
+    border-radius: 10px;
+  }
+  .company-description {
+    font-size: 0.98rem;
+    margin-bottom: 0;
+  }
+  .company-stats {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .stat {
+    padding: 10px 4vw 6px 4vw;
+    min-width: 80px;
+  }
+  .number {
+    font-size: 1.1rem;
+  }
+}

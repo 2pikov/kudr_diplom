@@ -1,0 +1,74 @@
+/* Стили для слайдера */
+#newsSlider {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden; /* Обрезка лишнего пространства для изображений*/
+    border-radius: 8px;
+}
+.carousel-item img {
+    object-fit: cover;
+    max-height: 500px; /* Максимальная высота изображений, регулируйте по своему желанию*/
+    filter: grayscale(100%); /*  Обесцвечивание изображений*/
+}
+.carousel-caption {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 0 10px 0 0;/* скругление левого верхнего угла*/
+    left: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+.carousel-caption h5 {
+    font-family: "Exo 2", serif;
+    color: #f00; /* Красный цвет для заголовков новостей */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-family: "Exo 2", serif;
+    color: #D20D0D; /* Белый цвет для текста новостей */
+    font-size: 1.1rem;
+}
+/* Адаптивность*/
+@media (max-width: 768px) {
+    .carousel-caption{
+        width: 100%;
+    }
+    .carousel-item img {
+    max-height: 300px; /* Уменьшенная максимальная высота изображений */
+    }
+}
+
+.slider {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.slider-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.slider-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.slider-button {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.slider-nav {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.slider-pagination {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}

@@ -1,0 +1,180 @@
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.user__info {
+    width: 100%;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.user__details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.user__detail {
+    display: flex;
+    gap: 10px;
+}
+
+.user__label {
+    font-weight: bold;
+    color: #495057;
+    width: 100px;
+    display: inline-block;
+}
+
+.user__value {
+    color: #212529;
+}
+
+.user-orders {
+    width: 100%;
+    border-radius: 5px;
+}
+.orders h2 {
+    padding: 20px;
+    text-align: center;
+}
+.orders__order {
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.order__number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.order__status {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.order__products {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+.order-product {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+.order__total {
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #28a745;
+}
+.user-logout {
+    align-self: flex-end;
+}
+
+.user-logout__button {
+    background-color: #D20D0D !important;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-logout__button:hover {
+    background-color: #D20D0D !important;
+}
+.btn-danger {
+    background-color: #D20D0D !important;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .user {
+        padding: 10px;
+    }
+    .user__info {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+    .orders__order,
+    .orders h2 {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+    .order__number {
+        font-size: 1em;
+    }
+    .user-logout__button {
+        padding: 8px 15px;
+    }
+}
+
+.user-profile {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.profile-header {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.profile-info {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.profile-label {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.profile-value {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.profile-button {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.profile-section-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.profile-form label {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.profile-form input,
+.profile-form select,
+.profile-form textarea {
+    font-family: var(--font-body);
+    font-weight: 400;
+}

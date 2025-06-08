@@ -1,0 +1,97 @@
+.zag_otzovi{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-3xl);
+    color: var(--color-primary);
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 200px;
+}
+button{
+  font-family: var(--font-heading);
+  background-color: var(--color-primary);
+  padding: 10px 20px; 
+  border-style: none;
+  color: white;
+  font-size: var(--font-size-base);
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+.container {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
+  column-gap: 190px; 
+  row-gap:50px;
+}
+.otzovi {
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-top: 190px; */
+}
+
+.otz__header {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-2xl);
+  color: var(--color-primary);
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.otz__text {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.reviews {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.reviews-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.review-item {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.review-author {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.review-date {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.review-text {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.review-rating {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.review-form {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.review-button {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}

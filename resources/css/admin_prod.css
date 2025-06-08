@@ -1,0 +1,115 @@
+.cart_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 150px;
+    color: #ff0000;
+    font-weight: 700;
+}
+
+.cart_table th,
+.cart_table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #555; /* Темно-серые разделители */
+}
+
+.cart_table th {
+    background-color: #ffffff; /* Темно-серый фон для заголовков */
+    font-weight: bold;
+}
+
+.cart_table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Более светлый фон для нечетных строк */
+}
+
+.cart_table tbody tr:nth-child(even) {
+    background-color: #ffffff; /* Еще более светлый фон для четных строк */
+}
+.cart_table img {
+    height: 200px;
+    width: auto;
+    border: 1px solid #555;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cart_raw td {
+    vertical-align: middle; /* Вертикальное выравнивание содержимого ячейки по центру */
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 2px;
+}
+
+.btn-primary {
+    background-color: #666; /* Серый цвет кнопки редактирования */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #888;
+}
+
+.btn-danger {
+    background-color: #e53935; /* Красный цвет кнопки удаления */
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #b71c1c;
+}
+.cart_table a {
+    color: #fff; /* Белый цвет для ссылок (кнопка "Редактировать") */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+}
+.cart_table a:hover {
+    text-decoration: underline;
+}
+.cart_table form {
+    display: inline; /* Чтобы форма располагалась рядом с кнопкой "Редактировать" */
+}
+
+.admin-container {
+    font-family: var(--font-body);
+}
+
+.admin-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.product-form label {
+    font-family: var(--font-body);
+}
+
+.product-form input,
+.product-form textarea,
+.product-form select {
+    font-family: var(--font-body);
+}
+
+.admin-button {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.product-list-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.product-item {
+    font-family: var(--font-body);
+}
+
+.action-button {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}

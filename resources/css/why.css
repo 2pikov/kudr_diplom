@@ -1,0 +1,211 @@
+/* --- Единый тёмный блок преимуществ --- */
+.why {
+  background: #fff;
+  padding: 120px 0 50px 0;
+  overflow: visible;
+  position: relative;
+  z-index: 10;
+}
+.why .zag_comp {
+  margin-bottom: 0;
+  color: #d20d0d;
+  background: none;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  padding: 0 0 10px 0;
+  display: block;
+}
+.why-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 36px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+.why-item {
+  background: #292929;
+  border-radius: 28px;
+  box-shadow: 0 6px 32px rgba(30,30,30,0.13);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 44px 24px 32px 24px;
+  position: relative;
+  transition: box-shadow 0.3s, transform 0.3s, border 0.3s;
+  min-height: 340px;
+  overflow: visible;
+  border: 2px solid #292929;
+  z-index: 10;
+}
+.why-item:hover {
+  box-shadow: 0 8px 32px 0 #d20d0d44, 0 2px 24px rgba(30,30,30,0.22);
+  border: 2px solid #d20d0d;
+}
+.why-item-img-wrap {
+  margin-bottom: 18px;
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d20d0d 0%, #fff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(210,13,13,0.10);
+  padding: 4px;
+  transition: box-shadow 0.3s;
+}
+.why-item img {
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #292929;
+  transition: transform 0.3s;
+}
+.why-item:hover .why-item-img-wrap {
+  box-shadow: 0 0 16px 4px #d20d0d55, 0 2px 12px rgba(210,13,13,0.18);
+}
+.why-item:hover img {
+  transform: scale(1.07);
+}
+.why_number {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 700;
+  background: #d20d0d;
+  border-radius: 50%;
+  padding: 4px 10px;
+  z-index: 3;
+  box-shadow: 0 1px 4px rgba(210,13,13,0.13);
+  border: 2px solid #fff2;
+}
+.why_opis {
+  font-size: 1.18rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+.why_opis_sub {
+  font-size: 1rem;
+  color: #bbb;
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+@media (max-width: 900px) {
+  .why {
+    padding-top: 70px;
+  }
+  .why-block {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .why-item {
+    min-height: 260px;
+    padding: 38px 8px 18px 8px;
+  }
+  .why-item-img-wrap {
+    width: 90px;
+    height: 90px;
+    padding: 3px;
+  }
+  .why-item img {
+    width: 82px;
+    height: 82px;
+  }
+  .why_number {
+    top: 10px;
+    right: 10px;
+    font-size: 0.9rem;
+    padding: 2px 7px;
+  }
+  .why_opis {
+    font-size: 1rem;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .why {
+    padding-top: 40px;
+  }
+  .why-block {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 0 2px;
+  }
+  .why-item {
+    min-height: 180px;
+    padding: 18px 2px 10px 2px;
+  }
+  .why-item-img-wrap {
+    width: 64px;
+    height: 64px;
+    padding: 2px;
+  }
+  .why-item img {
+    width: 56px;
+    height: 56px;
+  }
+  .why_number {
+    top: 4px;
+    right: 4px;
+    font-size: 0.7rem;
+    padding: 1px 4px;
+  }
+  .why_opis {
+    font-size: 0.95rem;
+    margin-top: 8px;
+  }
+}
+
+.why-section {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.why-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.why-subtitle {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.why-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.why-item-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.why-item-text {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.why-button {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+    

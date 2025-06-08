@@ -1,0 +1,553 @@
+.slider_img{
+    width: 1600px;
+    height: 400px;
+    -webkit-filter: none !important;
+}
+
+/* Адаптивность для слайдера */
+@media (max-width: 1200px) {
+    .slider_img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider_img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider_img {
+        height: 250px;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .slider_img {
+        height: 200px;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+/* Стили для секции услуг */
+.services-section {
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 40px; /* Отступы для кнопок навигации */
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+.service-card {
+    display: block;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 280px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-content {
+    padding: 32px;
+    height: 100%;
+    position: relative;
+}
+
+.service-content h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1F1E1E;
+    margin: 0;
+    line-height: 1.3;
+    max-width: 60%;
+}
+
+.service-image {
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.service-image img {
+    max-width: 100%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: #D20D0D;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+    z-index: 1;
+}
+
+.discount-badge span {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Стили для навигации слайдера */
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    background-color: #D20D0D;
+    border-radius: 8px;
+    color: white;
+    margin-top: -20px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.services-section:hover .swiper-button-prev,
+.services-section:hover .swiper-button-next {
+    opacity: 1;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 20px;
+}
+
+/* Стили для пагинации */
+.swiper-pagination {
+    display: none;
+}
+
+/* Медиа-запросы */
+@media (max-width: 1400px) {
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .services-section {
+        padding: 0 20px;
+    }
+}
+
+/* Стили для секции категорий */
+.categories-section {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 0 15px;
+}
+
+#categoriesCarousel .carousel-control-prev,
+#categoriesCarousel .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: #D20D0D;
+    border-radius: 8px;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#categoriesCarousel:hover .carousel-control-prev,
+#categoriesCarousel:hover .carousel-control-next {
+    opacity: 1;
+}
+
+#categoriesCarousel .carousel-control-prev {
+    left: 20px;
+}
+
+#categoriesCarousel .carousel-control-next {
+    right: 20px;
+}
+
+#categoriesCarousel .carousel-indicators {
+    bottom: -40px;
+}
+
+#categoriesCarousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #D20D0D;
+    opacity: 0.5;
+    margin: 0 6px;
+    transition: all 0.3s ease;
+}
+
+#categoriesCarousel .carousel-indicators button.active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Стили для слайдера категорий */
+.category-card {
+    background-color: #1F1E1E;
+    border-radius: 16px;
+    padding: 32px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category-content {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.category-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.category-icon i {
+    font-size: 32px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover .category-icon {
+    background: #D20D0D;
+    transform: scale(1.1);
+}
+
+.category-card h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Анимация при наведении */
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1));
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.category-card:hover::before {
+    transform: translateX(100%);
+}
+
+/* Стили для слайдера */
+.categories-swiper {
+    padding: 20px 50px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    background-color: #D20D0D;
+    border-radius: 8px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 20px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: #B00B0B;
+    transform: scale(1.1);
+}
+
+/* Адаптивность */
+@media (max-width: 1400px) {
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .category-card {
+        min-height: 220px;
+        padding: 24px;
+    }
+    
+    .category-card h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .category-card {
+        min-height: 200px;
+        padding: 20px;
+    }
+    
+    .category-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
+    }
+    
+    .category-icon i {
+        font-size: 28px;
+    }
+    
+    .category-card h3 {
+        font-size: 20px;
+    }
+    
+    .category-card p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .categories-section {
+        padding: 30px 0;
+    }
+    
+    .categories-grid {
+        gap: 12px;
+        padding: 0 10px;
+    }
+    
+    .category-card {
+        min-height: 180px;
+        padding: 16px;
+    }
+    
+    .category-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 12px;
+    }
+    
+    .category-icon i {
+        font-size: 24px;
+    }
+    
+    .category-card h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .category-card p {
+        font-size: 13px;
+    }
+    
+    #categoriesCarousel .carousel-control-prev,
+    #categoriesCarousel .carousel-control-next {
+        width: 35px;
+        height: 35px;
+    }
+    
+    #categoriesCarousel .carousel-control-prev {
+        left: 10px;
+    }
+    
+    #categoriesCarousel .carousel-control-next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .categories-section {
+        padding: 20px 0;
+    }
+    
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .category-card {
+        min-height: 160px;
+        padding: 15px;
+    }
+    
+    .category-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .category-icon i {
+        font-size: 20px;
+    }
+    
+    .category-card h3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    
+    .category-card p {
+        font-size: 12px;
+    }
+    
+    #categoriesCarousel .carousel-control-prev,
+    #categoriesCarousel .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+    
+    #categoriesCarousel .carousel-indicators {
+        bottom: -30px;
+    }
+    
+    #categoriesCarousel .carousel-indicators button {
+        width: 8px;
+        height: 8px;
+        margin: 0 4px;
+    }
+}
+
+.carousel {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.carousel-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.carousel-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.carousel-button {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.carousel-nav {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.carousel-indicator {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
