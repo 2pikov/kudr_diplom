@@ -1,12 +1,9 @@
 services:
   - type: web
     name: kudr-diplom
-    env: php
-    buildCommand: |
-      curl -sS https://getcomposer.org/installer | php
-      php composer.phar install --no-dev
-      npm install
-      npm run build
+    env: docker
+    dockerfilePath: ./Dockerfile
+    buildCommand: curl -sS https://getcomposer.org/installer | php && php composer.phar install --no-dev && npm install && npm run build
     startCommand: php artisan serve --host=0.0.0.0 --port=$PORT
     envVars:
       - key: APP_ENV
